@@ -1,0 +1,32 @@
+int main() 
+{ 
+    // gm is Graphics mode which is 
+    // a computer display mode that 
+    // generates image using pixels. 
+    // DETECT is a macro defined in 
+    // "graphics.h" header file 
+    int gd = DETECT, gm; 
+  
+    // initgraph initializes the 
+    // graphics system by loading a 
+    // graphics driver from disk 
+    initgraph(&gd, &gm, ""); 
+  
+    // Rectangle function 
+    rectangle(50, 50, 100, 100); 
+  
+    // Function calling 
+    boundaryFill8(55, 55, 4, 15); 
+  
+    delay(10000); 
+  
+    getch(); 
+  
+    // closegraph function closes the 
+    // graphics mode and deallocates 
+    // all memory allocated by 
+    // graphics system . 
+    closegraph(); 
+  
+    return 0; 
+} 
